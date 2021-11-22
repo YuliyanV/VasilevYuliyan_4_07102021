@@ -1,17 +1,21 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 a,
 button {
     transition: all .3s ease-in-out;
     outline: none !important;
 }
+
+
 
 a:hover {
     text-decoration: none;
@@ -282,6 +286,8 @@ a:hover {
     padding-right: 0;
     padding-left: 0;
 }
+
+
 
 #bloc-1-hero h1 {
     font-size: 32px;
@@ -692,17 +698,27 @@ a {
 }
 
 p {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 100%;
+    width: 90%;
+    /* max-width: 600px; */
     margin: auto auto auto auto;
 }
 
 .h1 {
     font-size: 20px;
     font-family: "Open Sans";
+}
+
+.h3 {
+    width: 85%;
+    text-transform: none;
+    margin: 0 auto;
+    font-size: 4rem;
+    margin-bottom: 2rem;
 }
 
 .cta-hero {
@@ -717,28 +733,35 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    margin-bottom: 6rem;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333 !important;
 }
 
 .med-width-whitespace {
-    max-width: 800px;
+    max-width: 100%;
+
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
 
 h1 {
     color: #333333 !important;
+    font-size: 4rem !important;
 }
 
 h4 {
@@ -790,16 +813,17 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C !important;
+    color: #f7d82c !important;
+    font-size: 4rem;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF !important;
+    background: #f57c43;
+    color: #e2e2e2 !important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956 !important;
+    background: #88492c !important;
     color: #FFFFFF !important;
 }
 
@@ -839,6 +863,35 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
+
+
+/* CONTACT-PAGE */
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.contact {
+    padding: 0 3rem;
+}
+
+.contact-text-secondary {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+.footer-text {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.contact-footer {
+    padding: 3rem 0;
+}
+
 
 @media (max-width: 1024px) {
     .bloc {
@@ -927,6 +980,14 @@ h4 {
     #disqus_thread {
         padding-left: 10px !important;
         padding-right: 10px !important;
+    }
+
+    h2 {
+        font-size: 2.5rem !important;
+    }
+
+    .text-box {
+        max-width: 100%;
     }
 
     .b-parallax {

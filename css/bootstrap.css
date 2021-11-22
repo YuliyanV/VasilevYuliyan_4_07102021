@@ -1457,6 +1457,10 @@ img {
     height: auto
 }
 
+.img-responsive {
+    width: 100%;
+}
+
 .img-rounded {
     border-radius: 6px
 }
@@ -1740,6 +1744,34 @@ a.text-warning:hover {
 
 .text-danger {
     color: #a94442
+}
+
+.footer ul li {
+    color: #f7ce2c !important;
+}
+
+
+.footer-title {
+    color: #f7ce2c !important;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-link-title {
+    color: #f7ce2c !important;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.footer-link {
+    color: #f0f0f0 !important;
+    font-size: 1.8rem;
+    padding: .3rem;
+    display: inline-block;
+}
+
+.footer-link:hover {
+    color: #f7d82c !important;
 }
 
 a.text-danger:focus,
