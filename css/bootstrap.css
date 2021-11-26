@@ -1,11 +1,4 @@
-/*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-
 html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
@@ -30,19 +23,6 @@ nav,
 section,
 summary {
     display: block
-}
-
-audio,
-canvas,
-progress,
-video {
-    display: inline-block;
-    vertical-align: baseline
-}
-
-audio:not([controls]) {
-    display: none;
-    height: 0
 }
 
 [hidden],
@@ -230,7 +210,6 @@ th {
 }
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-
 @media print {
 
     *,
@@ -256,8 +235,8 @@ th {
         content: " ("attr(title) ")"
     }
 
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
         content: ""
     }
 
@@ -323,7 +302,8 @@ th {
 @font-face {
     font-family: 'Glyphicons Halflings';
     src: url(../fonts/glyphicons-halflings-regular.eot);
-    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
+    font-display: swap
 }
 
 .glyphicon {
@@ -1402,7 +1382,7 @@ th {
 
 html {
     font-size: 10px;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    -webkit-tap-highlight-color: transparent
 }
 
 body {
@@ -1444,7 +1424,9 @@ figure {
 }
 
 img {
-    vertical-align: middle
+    vertical-align: middle;
+    width: 100%;
+    height: auto
 }
 
 .carousel-inner>.item>a>img,
@@ -1453,12 +1435,15 @@ img {
 .thumbnail a>img,
 .thumbnail>img {
     display: block;
-    max-width: 100%;
+    border: 3px solid red !important;
+    width: 67rem;
     height: auto
 }
 
 .img-responsive {
+    max-width: 70rem;
     width: 100%;
+    height: auto
 }
 
 .img-rounded {
@@ -1467,7 +1452,7 @@ img {
 
 .img-thumbnail {
     display: inline-block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     padding: 4px;
     line-height: 1.42857143;
@@ -1747,31 +1732,30 @@ a.text-warning:hover {
 }
 
 .footer ul li {
-    color: #f7ce2c !important;
+    color: #f7ce2c !important
 }
-
 
 .footer-title {
     color: #f7ce2c !important;
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem
 }
 
 .footer-link-title {
     color: #f7ce2c !important;
-    font-weight: bold;
-    font-size: 2.2rem;
+    font-weight: 700;
+    font-size: 2.2rem
 }
 
 .footer-link {
     color: #f0f0f0 !important;
     font-size: 1.8rem;
     padding: .3rem;
-    display: inline-block;
+    display: inline-block
 }
 
 .footer-link:hover {
-    color: #f7d82c !important;
+    color: #f7d82c !important
 }
 
 a.text-danger:focus,
@@ -3314,7 +3298,6 @@ input[type=search] {
 input[type=checkbox],
 input[type=radio] {
     margin: 4px 0 0;
-    margin-top: 1px\9;
     line-height: normal
 }
 
@@ -3332,8 +3315,8 @@ select[size] {
     height: auto
 }
 
-input[type=file]:focus,
 input[type=checkbox]:focus,
+input[type=file]:focus,
 input[type=radio]:focus {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -3410,31 +3393,31 @@ input[type=search] {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 
     input[type=date].form-control,
-    input[type=time].form-control,
     input[type=datetime-local].form-control,
-    input[type=month].form-control {
+    input[type=month].form-control,
+    input[type=time].form-control {
         line-height: 34px
     }
 
     .input-group-sm input[type=date],
-    .input-group-sm input[type=time],
     .input-group-sm input[type=datetime-local],
     .input-group-sm input[type=month],
+    .input-group-sm input[type=time],
     input[type=date].input-sm,
-    input[type=time].input-sm,
     input[type=datetime-local].input-sm,
-    input[type=month].input-sm {
+    input[type=month].input-sm,
+    input[type=time].input-sm {
         line-height: 30px
     }
 
     .input-group-lg input[type=date],
-    .input-group-lg input[type=time],
     .input-group-lg input[type=datetime-local],
     .input-group-lg input[type=month],
+    .input-group-lg input[type=time],
     input[type=date].input-lg,
-    input[type=time].input-lg,
     input[type=datetime-local].input-lg,
-    input[type=month].input-lg {
+    input[type=month].input-lg,
+    input[type=time].input-lg {
         line-height: 46px
     }
 }
@@ -3465,7 +3448,6 @@ input[type=search] {
 .radio input[type=radio],
 .radio-inline input[type=radio] {
     position: absolute;
-    margin-top: 4px\9;
     margin-left: -20px
 }
 
@@ -3930,7 +3912,6 @@ textarea.input-lg {
 .btn[disabled],
 fieldset[disabled] .btn {
     cursor: not-allowed;
-    filter: alpha(opacity=65);
     -webkit-box-shadow: none;
     box-shadow: none;
     opacity: .65
@@ -4511,7 +4492,7 @@ tbody.collapse.in {
     margin-left: 2px;
     vertical-align: middle;
     border-top: 4px dashed;
-    border-top: 4px solid\9;
+    border-top: 4px solid;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent
 }
@@ -4597,8 +4578,7 @@ tbody.collapse.in {
     text-decoration: none;
     cursor: not-allowed;
     background-color: transparent;
-    background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    background-image: none
 }
 
 .open>.dropdown-menu {
@@ -4646,8 +4626,7 @@ tbody.collapse.in {
 .navbar-fixed-bottom .dropdown .caret {
     content: "";
     border-top: 0;
-    border-bottom: 4px dashed;
-    border-bottom: 4px solid\9
+    border-bottom: 4px dashed
 }
 
 .dropup .dropdown-menu,
@@ -5071,7 +5050,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     position: relative;
     display: block;
     padding: 5px 10px;
-    font-weight: bolder;
+    font-weight: bolder
 }
 
 .nav>li>a:focus,
@@ -5358,7 +5337,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     max-height: 340px
 }
 
-@media (max-device-width:480px) and (orientation:landscape) {
+@media (max-width:480px) and (orientation:landscape) {
 
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
@@ -7311,7 +7290,6 @@ button.list-group-item-danger.active:hover {
     line-height: 1;
     color: #000;
     text-shadow: 0 1px 0 #fff;
-    filter: alpha(opacity=20);
     opacity: .2
 }
 
@@ -7320,7 +7298,6 @@ button.list-group-item-danger.active:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-    filter: alpha(opacity=50);
     opacity: .5
 }
 
@@ -7401,12 +7378,10 @@ button.close {
 }
 
 .modal-backdrop.fade {
-    filter: alpha(opacity=0);
     opacity: 0
 }
 
 .modal-backdrop.in {
-    filter: alpha(opacity=50);
     opacity: .5
 }
 
@@ -7498,13 +7473,11 @@ button.close {
     word-spacing: normal;
     word-wrap: normal;
     white-space: normal;
-    filter: alpha(opacity=0);
     opacity: 0;
     line-break: auto
 }
 
 .tooltip.in {
-    filter: alpha(opacity=90);
     opacity: .9
 }
 
@@ -7865,7 +7838,6 @@ button.close {
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-    filter: alpha(opacity=50);
     opacity: .5
 }
 
@@ -7874,7 +7846,6 @@ button.close {
     background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
     background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
     background-repeat: repeat-x
 }
 
@@ -7885,7 +7856,6 @@ button.close {
     background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
     background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
     background-repeat: repeat-x
 }
 
@@ -7893,7 +7863,6 @@ button.close {
 .carousel-control:hover {
     color: #fff;
     text-decoration: none;
-    filter: alpha(opacity=90);
     outline: 0;
     opacity: .9
 }
@@ -7956,7 +7925,6 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px
